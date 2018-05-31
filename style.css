@@ -619,6 +619,8 @@ body {
   font-family: 'Exo';
   font-size: 1rem;
   line-height: 1.5; }
+  body .source a {
+    font-style: italic; }
   body a {
     text-decoration: none;
     color: #0c0; }
@@ -628,6 +630,16 @@ body {
     color: #009e00; }
   body li {
     list-style-type: none; }
+
+.archive h1 {
+  border-bottom: 1px dotted #fff;
+  margin-top: 3rem;
+  padding-bottom: 1.5rem; }
+
+.archive article {
+  border-bottom: 1px dotted #fff;
+  margin-top: 3rem;
+  padding-bottom: 1.5rem; }
 
 .logo {
   display: -webkit-box;
@@ -680,12 +692,45 @@ button:focus {
   margin: 4.5rem 0 3rem; }
 
 .entry-title {
-  margin-top: 3rem; }
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
 
 .clearfix {
   clear: both;
   content: "";
-  display: table; }
+  display: table;
+  border: none;
+  padding: 0;
+  margin: 0; }
+
+input[type="search"] {
+  background-color: #222;
+  border: 2px solid #0c0;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  padding: .25rem 4rem .25rem .75rem;
+  font-family: 'Exo'; }
+
+.search-submit {
+  background-color: #222;
+  color: #0c0;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  line-height: 1;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none;
+  font-size: inherit;
+  border: 0;
+  padding-left: .75rem;
+  padding-right: .75rem; }
+
+.post-archives li, .category-archives li, .tag-archives li {
+  float: left;
+  font-size: 1rem;
+  margin-bottom: .5rem;
+  margin-right: 1.125rem; }
 
 .footer-navigation ul {
   display: -webkit-inline-box;
@@ -713,6 +758,12 @@ button:focus {
   margin-left: 0; }
 
 @media (min-width: 620px) {
+  .page-id-113 .tag-archives a {
+    font-size: 1.25rem !important; }
+  .page-id-113 li {
+    font-size: 1.25rem; }
+  p {
+    font-size: 1rem; }
   .logo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -727,14 +778,19 @@ button:focus {
     float: left;
     margin-bottom: .5rem;
     margin-right: 1.125rem; }
-  p {
+  .home p {
     font-size: 1.75rem; }
+  .home .site-info p {
+    font-size: 1rem; }
   #new-quote-button {
     font-size: 1.25rem; }
   .site-info p {
-    font-size: 1rem;
     position: relative;
-    bottom: 4px; } }
+    bottom: 4px; }
+  .archive .source a {
+    font-size: 1.25rem; }
+  .archive .entry-content p {
+    font-size: 1.75rem; } }
 
 .page-id-111 input, .page-id-111 textarea {
   background-color: #222;
@@ -757,6 +813,14 @@ button:focus {
   .page-id-111 input:hover, .page-id-111 textarea:hover {
     color: #009e00;
     border: 2px solid #009e00; }
+
+.page-id-111 .site-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
 
 .page-id-111 .label {
   margin-bottom: 1rem; }
@@ -786,38 +850,27 @@ button:focus {
   .site-content {
     margin: 4.5rem 175px 1.5rem;
     position: relative; }
-  .site-content:before {
+  .site-content::before {
     color: #0c0;
-    font-size: 125px;
+    font-size: 7.8125rem;
     line-height: 125px;
     position: absolute;
     top: 0;
     font-family: 'FontAwesome';
     content: "\f10d";
     left: -175px; }
-  .site-content:after {
+  .site-content::after {
     color: #0c0;
-    font-size: 125px;
-    line-height: 125px;
+    font-size: 7.8125rem;
+    line-height: 7.8125rem;
     position: absolute;
     top: 0;
     font-family: 'FontAwesome';
     content: "\f10e";
     right: -175px; }
-  .site-info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end; }
-    .site-info p {
-      font-size: 1rem; }
-  p {
+  .home p {
     font-size: 2.5rem; }
-  .page-id-107 {
+  .home .site-info p {
     font-size: 1rem; }
   .page-id-111 input, .page-id-111 textarea {
-    padding-right: 14rem; }
-  .page-id-113 .tag-archives a {
-    font-size: 1rem; } }
+    padding-right: 14rem; } }
