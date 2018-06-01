@@ -694,7 +694,6 @@ button:focus {
   margin: 4.5rem 0 3rem; }
 
 .entry-meta {
-  margin-top: 3rem;
   margin-bottom: 3rem; }
 
 .clearfix {
@@ -837,7 +836,9 @@ input[type="search"]:focus {
   margin-bottom: 1rem; }
 
 .page-id-111 textarea {
-  padding: .75rem 2.25rem;
+  padding-top: 1rem;
+  padding-right: .5rem;
+  padding-left: .5rem;
   padding-bottom: 1rem; }
 
 .page-id-111 input[type="submit"] {

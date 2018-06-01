@@ -157,7 +157,6 @@ button:focus {
 }
 
 .entry-meta {
-	margin-top: 3rem;
 	margin-bottom: 3rem;
 }
 
@@ -369,7 +368,9 @@ input[type="search"]:focus {
 		}
 
 		textarea {
-			padding: .75rem 2.25rem;
+			padding-top: 1rem;
+			padding-right: .5rem;
+			padding-left: .5rem;
 			padding-bottom: 1rem;
 		}
 
