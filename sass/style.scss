@@ -59,19 +59,14 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "media";
 @import "page-templates";
 
+
+
 body {
 	background: #222;
 	color: #fff;
     font-family: 'Exo';
     font-size: 1rem;
 	line-height: 1.5;
-
-	.source {
-
-		a {
-			font-style: italic;
-		}
-	}
 	
 	a {
 		text-decoration: none;
@@ -88,6 +83,11 @@ body {
 
 	li {
 		list-style-type: none;
+	}
+
+	.source {
+		font-size: 1.25rem;
+		font-style: italic;
 	}
 }
 
@@ -156,7 +156,7 @@ button:focus {
 	margin: 4.5rem 0 3rem;
 }
 
-.entry-title {
+.entry-meta {
 	margin-top: 3rem;
 	margin-bottom: 3rem;
 }
@@ -199,6 +199,19 @@ input[type="search"] {
 	font-size: 1rem;
 	margin-bottom: .5rem;
 	margin-right: 1.125rem;
+}
+
+.post-template-default, .home, .archive {
+	
+	.entry-content p {
+		font-size: 1.25rem;
+	}
+
+	.entry-title {
+		font-size: 1.25rem;
+		display: inline;
+		font-weight: 400;
+	}
 }
 
 .footer-navigation {
@@ -281,9 +294,9 @@ input[type="search"]:focus {
     		margin-right: 1.125rem;
 		}
 
-	.home {
+	.post-template-default, .home, .archive {
 
-		p {
+		.entry-content p {
 			font-size: 1.75rem;
 		}
 
@@ -351,11 +364,6 @@ input[type="search"]:focus {
 			}
 		}
 
-		.site-info {
-			display: flex;
-			justify-content: flex-end;
-		}
-
 		.label {
 			margin-bottom: 1rem;
 		}
@@ -413,7 +421,7 @@ input[type="search"]:focus {
 		right: -175px;
 	}
 	
-	.home {
+	.post-template-default, .home {
 
 		p {
 			font-size: 2.5rem;
@@ -432,6 +440,18 @@ input[type="search"]:focus {
 		input, textarea {
 			padding-right: 14rem;
 		}
+	}
+
+	.post-template-default, .home, .archive {
+
+		.entry-content p {
+			font-size: 2.5rem;
+		}
+	}
+
+	.site-info {
+		display: flex;
+		justify-content: flex-end;
 	}
 	
 

@@ -620,8 +620,6 @@ body {
   font-family: 'Exo';
   font-size: 1rem;
   line-height: 1.5; }
-  body .source a {
-    font-style: italic; }
   body a {
     text-decoration: none;
     color: #0c0; }
@@ -631,6 +629,9 @@ body {
     color: #009e00; }
   body li {
     list-style-type: none; }
+  body .source {
+    font-size: 1.25rem;
+    font-style: italic; }
 
 .archive h1 {
   border-bottom: 1px dotted #fff;
@@ -692,7 +693,7 @@ button:focus {
       flex-wrap: wrap;
   margin: 4.5rem 0 3rem; }
 
-.entry-title {
+.entry-meta {
   margin-top: 3rem;
   margin-bottom: 3rem; }
 
@@ -732,6 +733,14 @@ input[type="search"] {
   font-size: 1rem;
   margin-bottom: .5rem;
   margin-right: 1.125rem; }
+
+.post-template-default .entry-content p, .home .entry-content p, .archive .entry-content p {
+  font-size: 1.25rem; }
+
+.post-template-default .entry-title, .home .entry-title, .archive .entry-title {
+  font-size: 1.25rem;
+  display: inline;
+  font-weight: 400; }
 
 .footer-navigation ul {
   display: -webkit-inline-box;
@@ -788,9 +797,9 @@ input[type="search"]:focus {
     float: left;
     margin-bottom: .5rem;
     margin-right: 1.125rem; }
-  .home p {
+  .post-template-default .entry-content p, .home .entry-content p, .archive .entry-content p {
     font-size: 1.75rem; }
-  .home .site-info p {
+  .post-template-default .site-info p, .home .site-info p, .archive .site-info p {
     font-size: 1rem; }
   #new-quote-button {
     font-size: 1.25rem; }
@@ -823,14 +832,6 @@ input[type="search"]:focus {
   .page-id-111 input:hover, .page-id-111 textarea:hover {
     color: #009e00;
     border: 2px solid #009e00; }
-
-.page-id-111 .site-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end; }
 
 .page-id-111 .label {
   margin-bottom: 1rem; }
@@ -878,9 +879,18 @@ input[type="search"]:focus {
     font-family: 'FontAwesome';
     content: "\f10e";
     right: -175px; }
-  .home p {
+  .post-template-default p, .home p {
     font-size: 2.5rem; }
-  .home .site-info p {
+  .post-template-default .site-info p, .home .site-info p {
     font-size: 1rem; }
   .page-id-111 input, .page-id-111 textarea {
-    padding-right: 14rem; } }
+    padding-right: 14rem; }
+  .post-template-default .entry-content p, .home .entry-content p, .archive .entry-content p {
+    font-size: 2.5rem; }
+  .site-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; } }
