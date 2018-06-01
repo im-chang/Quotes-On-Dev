@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
 Theme Name: Quotes on Dev Starter Theme
 Theme URI: http://underscores.me/
@@ -753,6 +754,15 @@ input[type="search"] {
 .footer-navigation li:first-child {
   padding-left: 0; }
 
+#quote-author:focus, #quote-content:focus, #quote-source:focus, #quote-source-url:focus {
+  color: #fff;
+  border: 2px solid #fff; }
+
+input[type="search"]:focus {
+  color: #fff;
+  border: 2px solid #fff; }
+
+    
 .page-id-113 ul {
   padding-left: 0;
   margin-left: 0; }

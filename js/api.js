@@ -65,12 +65,6 @@
       });
     }); 
 
-    $('input, textarea').on('click', function(e){
-      e.preventDefault();
-      $(this).css('border-color', '#fff');
-    });
-
-
   $(window).on('popstate', function(){
       window.location.replace(lastPage);
   });

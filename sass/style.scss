@@ -59,7 +59,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "media";
 @import "page-templates";
 
-
 body {
 	background: #222;
 	color: #fff;
@@ -202,8 +201,6 @@ input[type="search"] {
 	margin-right: 1.125rem;
 }
 
-
-
 .footer-navigation {
 
 	ul {
@@ -229,6 +226,17 @@ input[type="search"] {
 	}
 }
 
+#quote-author:focus, #quote-content:focus, #quote-source:focus, #quote-source-url:focus {
+	color: #fff;
+	border: 2px solid #fff;
+}
+
+input[type="search"]:focus {
+	color: #fff;
+	border: 2px solid #fff;
+}
+	
+    
 .page-id-113 {
 
 	ul {
