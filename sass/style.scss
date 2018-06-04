@@ -176,6 +176,7 @@ input[type="search"] {
 	margin-bottom: 1.5rem;
 	padding: .25rem 4rem .25rem .75rem;
 	font-family: 'Exo';
+
 }
 
 .search-submit {
@@ -246,6 +247,7 @@ input[type="search"] {
 input[type="search"]:focus {
 	color: #fff;
 	border: 2px solid #fff;
+	outline: 0;
 }
 	
     
@@ -379,6 +381,7 @@ input[type="search"]:focus {
 			box-shadow: none;
 			text-shadow: none;
 			margin-top: 1.5rem;
+			outline: 0;
 		}
 
 	}

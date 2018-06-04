@@ -19,7 +19,11 @@
 
             if(data[0]._qod_quote_source_url.length > 0){
               $(".source").empty(),
-              $(".source").append(' ' + '<a href="' + data[0]._qod_quote_source_url + '">' + data[0]._qod_quote_source + '</a>');
+              $(".source").append(', ' + '<a href="' + data[0]._qod_quote_source_url + '">' + data[0]._qod_quote_source + '</a>');
+            }
+
+            else if(data[0]._qod_quote_source.length > 0){
+               $('.source').html(', ' + data[0]._qod_quote_source);
             }
 
             else {
@@ -51,7 +55,7 @@
           content: quote,
           _qod_quote_source: source,
           _qod_quote_source_url: sourceUrl,
-          status: "draft"
+          status: "pending"
         },
         beforeSend: function (xhr) {
           xhr.setRequestHeader('X-WP-Nonce', api_vars.nonce);
